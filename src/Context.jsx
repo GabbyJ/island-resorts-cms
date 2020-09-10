@@ -1,5 +1,6 @@
 import React, {Component} from "react";
-import items from "./data"; //contentful will call this items but this is just the whole data.js file
+//import items from "./data"; //contentful will call this items but this is just the whole data.js file
+import Client from "./Contentful.js";
 
 const RoomContext = React.createContext();
 
@@ -21,9 +22,15 @@ class RoomProvider extends Component{
     };
 
     //getData
-    componentDidMount(){
-        //this.getData
-        let rooms = this.formatData(items);
+    getData = async () => {
+        try {
+            let response = await Client.getEntries({
+                content_type: "islandResort", //narrow down what items to show
+                //order: 'sys.createdAt' //order items by publish date
+                order: "fields.roomType,fields.price" //order items by multiple parameters
+            });
+
+        let rooms = this.formatData(response.items); //items to response.items for contentful api to work instead of just local data
         let featuredRooms = rooms.filter(room => room.featured === true);
         let maxPrice = Math.max(...rooms.map(item => item.price));
         let maxSize = Math.max(...rooms.map(item => item.size));
@@ -36,7 +43,20 @@ class RoomProvider extends Component{
             price: maxPrice,
             maxPrice,
             maxSize
-        })
+        });
+
+            
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+
+    componentDidMount(){
+        this.getData()
+        //all the lets and this.setState in getData above moved from here
+        //here works for local data, not api data
+        
     }
 
     formatData(arrays){
