@@ -1,3 +1,21 @@
+<p>As I was learning React while building my portfolio site, I decided to create a separate project focusing on concepts I didn't focus on in my portfolio. The new concepts in this site that I learned as I went are react routes, react hooks, and using a headless CMS. I need more practice on hooks.</p>
+<p>I really wanted to make sure I used CSS grid and flexbox to replace most media queries and keep my layouts smooth, because I certainly haven't used those as much as I should. </p>
+<p>I created the "Island Resort" logo myself. I know it's not much, but it's cute enough to get the job done.</p>
+
+<p>View the live site for the <a href="https://island-resort-cms.netlify.app" target="_blank">Island Resorts here</a></p>
+
+<p>Created Using:</p>
+<ul>
+<li>React (Hooks)</li>
+<li>Vanilla Javascript</li>
+<li>JSON</li>
+<li>CSS (Grid and Flexbox)</li>
+<li>Contentful headless CMS</li>
+</ul>
+
+<details>
+<summary>Create React App npm commands</summary>
+<br>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +84,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+</details>

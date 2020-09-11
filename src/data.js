@@ -423,7 +423,7 @@ export default [
       name: "double deluxe",
       slug: "double-deluxe",
       type: "double",
-      price: 400,
+      price: 600,
       size: 500,
       capacity: 2,
       pets: true,

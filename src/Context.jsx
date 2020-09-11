@@ -27,7 +27,7 @@ class RoomProvider extends Component{
             let response = await Client.getEntries({
                 content_type: "islandResort", //narrow down what items to show
                 //order: 'sys.createdAt' //order items by publish date
-                order: "fields.type" //order items by multiple parameters
+                order: "fields.capacity" //order items by multiple parameters
             });
 
         let rooms = this.formatData(response.items); //items to response.items for contentful api to work instead of just local data
