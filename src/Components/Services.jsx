@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import {FaCocktail, FaHiking, FaShuttleVan, FaBeer} from "react-icons/fa"
-import {MdPool} from "react-icons/md"
+import {FaCocktail, FaHiking, FaShuttleVan} from "react-icons/fa";
+import {MdPool} from "react-icons/md";
 import Title from "./Title";
 
 export default class Services extends Component {
