@@ -1,8 +1,8 @@
 <p>As I was learning React while building my portfolio site, I decided to create a separate project focusing on concepts I didn't focus on in my portfolio. The new concepts in this site that I learned as I went are react routes, react hooks, and using a headless CMS. I need more practice on hooks.</p>
-<p>I really wanted to make sure I used CSS grid and flexbox to replace most media queries and keep my layouts smooth, because I certainly haven't used those as much as I should. </p>
+<p>I really wanted to make sure I used CSS grid and flexbox to replace most media queries and keep my layouts smooth, because I certainly haven't used those as much as I should. Another important feature I focused on was filtering and I pushed myself by doing different types (strings, numbers, booleans).</p>
 <p>I created the "Island Resort" logo myself. I know it's not much, but it's cute enough to get the job done.</p>
 
-<p>View the live site for the <a href="https://island-resort-cms.netlify.app" target="_blank">Island Resorts here</a></p>
+<p>View the live site for the <a href="https://island-resort-cms.netlify.app" target="_blank">Island Resorts here</a>.</p>
 
 <p>Created Using:</p>
 <ul>
